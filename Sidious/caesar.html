@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    }
+
+    h2,h3,p{
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+    }
+
+    input, button {
+        display: block;
+        margin-left: 16.5%;
+        margin-right: auto;
+    }
+    #output {
+        color: red;
+        margin-left: 50%;
+        margin-right: auto;
+    }
+
+
+</style>
+    <body>
+        <img src = "s-l300.jpg" alt="rebel alliance empire emblem mash" class="center">
+
+        <h2>Sidious's Cipher</h2>
+
+        <p class = "center" >Cipher:  </p>
+        <input type = "text" id = "input" value = "" size = '25'> 
+        <p>Key: </p>
+        <input type = "text" id = "key" value = "" size = '25'>
+
+        <h3>Part 1</h3>
+        <p>You are the mild-mannered secretary to the evil Darth Sidious. Your master has entrusted you as the guardian of his secret plans to take over the galaxy. As a safety measure, he has asked you to encode all of his messages using a Caesar cipher. Naturally, you decide to write a program to help you.</p>
+        <button onclick = "encode()">Encode --> Part 1</button>
+        <h3>Part 2</h3>
+        <p>Little does Darth Sidious know, however, that you are in fact a Jedi padawan working for the Rebel Alliance. Thus, you have been secretly transmitting all of Darth Sidious's messages to Alliance officials, along with the key needed to decode them.</p>
+        <button onclick = "decode()">Decode -- > Part 2</button>
+
+        <h3>Part 3</h3>
+        <p>Bad news! Darth Sidious suspects that you may have conflicting loyalties. In his wrath, he has strictly forbidden you from including the key with your encodings. Regretfully, you inform your colleagues in the Alliance that they must decode your messages (which you bravely continue to transmit without Darth Sidious's knowledge) without knowing the key beforehand.</p>
+        <button onclick = "decode26()">Rebel Alliance --> Part 3</button>
+
+        <p id = "output"  > Output Here </p>
+
+        <script src = "caesar.js"></script>
+
+
+
+    </body>
+
+</html>
